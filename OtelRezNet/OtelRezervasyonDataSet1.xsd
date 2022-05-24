@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OtelRezervasyonDataSet1" targetNamespace="http://tempuri.org/OtelRezervasyonDataSet1.xsd" xmlns:mstns="http://tempuri.org/OtelRezervasyonDataSet1.xsd" xmlns="http://tempuri.org/OtelRezervasyonDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="OtelRezervasyonConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OtelRezervasyonConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OtelRezNet.Properties.Settings.GlobalReference.Default.OtelRezervasyonConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BugunOteledeOlanMusterilerTableAdapter" GeneratorDataComponentClassName="BugunOteledeOlanMusterilerTableAdapter" Name="BugunOteledeOlanMusteriler" UserDataComponentName="BugunOteledeOlanMusterilerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OtelRezervasyonConnectionString (Settings)" DbObjectName="OtelRezervasyon.dbo.BugunOteledeOlanMusteriler" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MusteriAd, RezTur, OdaId, RezBaslangicTarihi, RezBitisTarihi FROM dbo.BugunOteledeOlanMusteriler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MusteriAd" DataSetColumn="MusteriAd" />
+              <Mapping SourceColumn="RezTur" DataSetColumn="RezTur" />
+              <Mapping SourceColumn="OdaId" DataSetColumn="OdaId" />
+              <Mapping SourceColumn="RezBaslangicTarihi" DataSetColumn="RezBaslangicTarihi" />
+              <Mapping SourceColumn="RezBitisTarihi" DataSetColumn="RezBitisTarihi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OtelRezervasyonDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OtelRezervasyonDataSet1" msprop:Generator_UserDSName="OtelRezervasyonDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BugunOteledeOlanMusteriler" msprop:Generator_TableClassName="BugunOteledeOlanMusterilerDataTable" msprop:Generator_TableVarName="tableBugunOteledeOlanMusteriler" msprop:Generator_TablePropName="BugunOteledeOlanMusteriler" msprop:Generator_RowDeletingName="BugunOteledeOlanMusterilerRowDeleting" msprop:Generator_RowChangingName="BugunOteledeOlanMusterilerRowChanging" msprop:Generator_RowEvHandlerName="BugunOteledeOlanMusterilerRowChangeEventHandler" msprop:Generator_RowDeletedName="BugunOteledeOlanMusterilerRowDeleted" msprop:Generator_UserTableName="BugunOteledeOlanMusteriler" msprop:Generator_RowChangedName="BugunOteledeOlanMusterilerRowChanged" msprop:Generator_RowEvArgName="BugunOteledeOlanMusterilerRowChangeEvent" msprop:Generator_RowClassName="BugunOteledeOlanMusterilerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MusteriAd" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMusteriAd" msprop:Generator_ColumnPropNameInRow="MusteriAd" msprop:Generator_ColumnPropNameInTable="MusteriAdColumn" msprop:Generator_UserColumnName="MusteriAd" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RezTur" msprop:Generator_ColumnVarNameInTable="columnRezTur" msprop:Generator_ColumnPropNameInRow="RezTur" msprop:Generator_ColumnPropNameInTable="RezTurColumn" msprop:Generator_UserColumnName="RezTur" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OdaId" msprop:Generator_ColumnVarNameInTable="columnOdaId" msprop:Generator_ColumnPropNameInRow="OdaId" msprop:Generator_ColumnPropNameInTable="OdaIdColumn" msprop:Generator_UserColumnName="OdaId" type="xs:short" minOccurs="0" />
+              <xs:element name="RezBaslangicTarihi" msprop:Generator_ColumnVarNameInTable="columnRezBaslangicTarihi" msprop:Generator_ColumnPropNameInRow="RezBaslangicTarihi" msprop:Generator_ColumnPropNameInTable="RezBaslangicTarihiColumn" msprop:Generator_UserColumnName="RezBaslangicTarihi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RezBitisTarihi" msprop:Generator_ColumnVarNameInTable="columnRezBitisTarihi" msprop:Generator_ColumnPropNameInRow="RezBitisTarihi" msprop:Generator_ColumnPropNameInTable="RezBitisTarihiColumn" msprop:Generator_UserColumnName="RezBitisTarihi" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
